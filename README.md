@@ -72,3 +72,11 @@ Run the Python Script
 ```bash
 python3 meracl.py
 ```
+
+## Additional information
+
+Meraki Network Switch ACL API documentation:
+https://developer.cisco.com/meraki/api-v1/update-network-switch-access-control-lists/
+
+Meraki Python SDK documentation:
+https://github.com/meraki/dashboard-api-python/tree/main
