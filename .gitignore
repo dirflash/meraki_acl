@@ -2,8 +2,9 @@
 __pycache__/
 .vscode
 .venv
-acl_csv_backup/
-acl_backup/
-json_push/
-logs/
+acl_csv_backup/*
+acl_backup/*
+json_push/*
+!README.md
+*.log
 utils/preferences.py
