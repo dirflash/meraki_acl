@@ -1,11 +1,11 @@
-# Project Title Meraki MS ACL
+# Meraki MS ACL
 
 This is a proof of concept that updates the ACLs on a Meraki MS Switch from a CSV file. This script backs up the current ACLs and then updates them with ACLs from a CSV file located at ./acl_push/acl/push.csv.
 
 - Technology stack: Python and the Meraki SDK.
 - Status: Beta. I wrote this script in a few hours to share with a customer an example of what could be accomplished with the Meraki API.
 
-## Installation (required)
+## Installation
 
 Clone the repo
 
@@ -46,9 +46,15 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
-## Usage (required)
+## Usage
 
-Set FLASK_APP
+Create a preferences.py file in the utils folder. Add your Meraki dashboard API key and the Network Name to receive the updated ACLs.
+
+![preferences.py](https://github.com/dirflash/meraki_acl/assets/10964629/a08b5dcb-0134-49fd-8818-1880433e4e1b)
+
+Update the acl_push.csv file in the acl_push folder with the access control entries that should be pushed to your network.
+
+Run the Python Script
 
 ```python3 meracl.py
 
