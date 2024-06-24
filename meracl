@@ -1,13 +1,13 @@
 """Proof of concept that updates the ACLs on a Meraki MS Switch from a CSV file
 
-    This script backs up the current ACLs and then updates them with ACLs from: 
+    This script backs up the current ACLs and then updates them with ACLs from:
         ./acl_push/acl/push.csv.
     The CSV file should have the following headers:
         Comment,Policy,IP Version,Protocol,Source CIDR,Source Port,Destination CIDR,Destination Port,Vlan
 
-    Questions about the Network Switch ACL API: 
+    Questions about the Network Switch ACL API:
     https://developer.cisco.com/meraki/api-v1/update-network-switch-access-control-lists/
-    
+
     Questions about the Meraki Python SDK:
     https://github.com/meraki/dashboard-api-python/tree/main
 """
@@ -25,7 +25,7 @@ API_KEY = pref.MERAKI_API_KEY
 NETWORK_NAME = pref.NETWORK_NAME  # Replace with the name of your network
 ACL_PUSH_DIR = "./acl_push"
 
-new_acls = {"rules": []}
+new_acls: dict[str, list] = {"rules": []}
 
 dashboard = meraki.DashboardAPI(API_KEY)
 
