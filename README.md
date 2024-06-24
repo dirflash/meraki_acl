@@ -52,10 +52,23 @@ Create a preferences.py file in the utils folder. Add your Meraki dashboard API 
 
 ![preferences.py](https://github.com/dirflash/meraki_acl/assets/10964629/a08b5dcb-0134-49fd-8818-1880433e4e1b)
 
-Update the acl_push.csv file in the acl_push folder with the access control entries that should be pushed to your network.
+Update the acl_push.csv file in the acl_push folder with the access control entries that should be pushed to your network. An example
+of this file is found at acl_push/acl_push.csv.
+
+Options for each entry:
+
+- Policy (required) = Deny or Allow
+- IP Version (required) = Any, IPv4, or IPv6
+- Protocol (required) = TCP, UDP, or Any
+- Source (required) = CIDR formatted IP address or subnet, or Any
+- Scr port (required) = port number or Any
+- Destination (required) = CIDR formatted IP address or subnet, or Any
+- Dst port (required) = port number or Any
+- Vlan (required) = Vlan number or Any
+- Comment = Freeform description of the ACL entry
 
 Run the Python Script
 
-```python3 meracl.py
-
+```bash
+python3 meracl.py
 ```
