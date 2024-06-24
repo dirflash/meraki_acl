@@ -1,0 +1,4 @@
+Comment,Policy,IP Version,Protocol,Source CIDR,Source Port,Destination CIDR,Destination Port,Vlan
+ftp,deny,ipv4,tcp,any,any,any,21,any
+telnet,deny,ipv4,tcp,any,any,any,23,any
+www,deny,ipv4,tcp,any,any,8.8.8.8,80,any
