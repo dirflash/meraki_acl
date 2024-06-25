@@ -38,6 +38,7 @@ cd meraki_acl
 ```
 
 Set up a Python venv
+
 First make sure that you have Python 3 installed on your machine. We will then be using venv to create an isolated environment with only the necessary packages.
 
 Install virtualenv via pip
@@ -46,21 +47,24 @@ Install virtualenv via pip
 pip install virtualenv
 ```
 
+````bash
+py -m venv .venv
+
 Create the venv
 
 ```bash
 python3 -m venv .venv
-```
+````
 
 Activate your venv
 
-Windows machines
+Windows machines:
 
 ```bash
 source .venv/Scripts/activate
 ```
 
-Non-Windows machines
+Non-Windows machines:
 
 ```bash
 source .venv/bin/activate
@@ -93,7 +97,9 @@ Options for each entry:
 - Vlan (required) = Vlan number or Any
 - Comment = Freeform description of the ACL entry
 
-Run the Python Script
+### Run the Python Script
+
+The command to run Python could vary slightly on your machine, depending on your Python installation.
 
 Windows machines
 
