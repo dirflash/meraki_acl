@@ -36,6 +36,14 @@ python3 -m venv .venv
 
 Activate your venv
 
+Windows machines
+
+```bash
+source .venv/Scripts/activate
+```
+
+Non-Windows machines
+
 ```bash
 source .venv/bin/activate
 ```
@@ -68,6 +76,14 @@ Options for each entry:
 - Comment = Freeform description of the ACL entry
 
 Run the Python Script
+
+Windows machines
+
+```bash
+python3 meracl
+```
+
+Non-Windows machines
 
 ```bash
 python3 meracl.py
