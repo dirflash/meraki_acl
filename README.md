@@ -25,7 +25,10 @@ git clone https://github.com/dirflash/meraki_acl.git
 
 ### Non-git method - Download the repo from GitHub
 
-In the repo, click on !['Code' and 'Download Zip'](https://github.com/dirflash/meraki_acl/assets/10964629/fe7bfc15-fe76-4f52-9ffa-1ef41c9f6af3)
+In the repo, click on 'Code' and 'Download Zip'.
+
+![](https://github.com/dirflash/meraki_acl/assets/10964629/fe7bfc15-fe76-4f52-9ffa-1ef41c9f6af3)
+
 Extract the zip into the 'meraki_acl' folder on your machine
 
 Go to your project folder
