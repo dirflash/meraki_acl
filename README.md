@@ -11,7 +11,9 @@ Clone the repo
 
 Create a 'meraki_acl' folder on your machine.
 
-- Using git
+Download the repo, using either the git method, or the non-get method described below.
+
+### Using git
 
 Download and launch ![git](https://git-scm.com/downloads)
 Using git, navigate to the 'meraki_acl' folder you created on your machine.
@@ -21,7 +23,7 @@ Clone the project, using the following command.
 git clone https://github.com/dirflash/meraki_acl.git
 ```
 
-- Download the repo from GitHub
+### Non-git method - Download the repo from GitHub
 
 In the repo, click on !['Code' and 'Download Zip'](https://github.com/dirflash/meraki_acl/assets/10964629/fe7bfc15-fe76-4f52-9ffa-1ef41c9f6af3)
 Extract the zip into the 'meraki_acl' folder on your machine
