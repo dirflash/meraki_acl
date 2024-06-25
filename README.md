@@ -104,7 +104,7 @@ The command to run Python could vary slightly on your machine, depending on your
 Windows machines
 
 ```bash
-python3 meracl
+python3 meracl.py
 ```
 
 Non-Windows machines
