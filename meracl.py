@@ -180,8 +180,11 @@ if os.path.exists("./acl_push/acl_push.csv"):
     print("Ready to go.")
 
 # Push ACLs to network
-post_switch_acls = dashboard.switch.updateNetworkSwitchAccessControlLists(
-    network_id, new_acls["rules"]
-)
+try:
+    post_switch_acls = dashboard.switch.updateNetworkSwitchAccessControlLists(
+        network_id, new_acls["rules"]
+    )
+except meraki.exceptions.APIError as e:
+    print(e)
 
 print(post_switch_acls)
